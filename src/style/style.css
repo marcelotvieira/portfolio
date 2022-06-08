@@ -75,9 +75,9 @@ header img {
     max-width: 130px;
     transform:  perspective(30px) rotateX(-2deg) rotateY(5deg);
     border-radius: 50%;
-    box-shadow: -3px 3px 2px rgba(130, 204, 253, 0.99);
+    box-shadow: -4px 4px 2px rgb(104, 140, 238);
     animation: photo-animation 2.5s infinite alternate;
-    filter: drop-shadow(-8px 8px 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(-8px 8px 4px rgba(0, 0, 0, 0.5));
 }
 .menu {
     list-style-type: none;
@@ -152,7 +152,7 @@ a{
 
     100% {
         transform:  translateY(0px) translateX(10px) perspective(20px) rotateX(-2deg) rotateY(4deg);
-        filter: drop-shadow(-8px 20px 8px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(-8px 20px 8px rgba(0, 0, 0, 0.2));
     }
 }
 
@@ -281,7 +281,8 @@ textarea {
 
 .portfolio-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2.5rem;
     
     align-items: center;
     min-width: 100%;
@@ -292,7 +293,7 @@ textarea {
 .slider {
     display: flex;
     flex-wrap: nowrap;
-    overflow: hidden;
+
     overflow-x: scroll;
     height: 70%;
     scroll-behavior: smooth;
@@ -304,6 +305,22 @@ textarea {
 .component-info {
     max-width: 320px;
     margin-left: 80px;
+    border-left: 6px solid rgba(104, 140, 238, 0.6);;
+    height: fit-content;
+    background-image:linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    padding-left: 24px;
+    
+}
+.slider a i {
+    color: rgb(104, 140, 238);
+    transition: .2s;
+    border-radius: 50%;
+}
+.slider a i:hover {
+    transform: translateY(-8px);
+    filter: drop-shadow(0px 8px 2px rgba(0, 0, 0, 0.2) );
+    transition: .4s;
+    border: 1px solid white;
     
 }
 .portfolio-navigation {
@@ -332,7 +349,7 @@ textarea {
 }
 
 .portfolio-content img {
-    width: 180px;
+    width: 200px;
     border: 6px solid rgb(47, 70, 88);
     border-bottom: 10px solid rgb(47, 70, 88);
     border-top: 10px solid rgb(47, 70, 88);
@@ -355,4 +372,15 @@ textarea {
     100% {
         transform: perspective(42px) translateX(46px) rotateZ(-5deg) rotateY(2deg);
     }
+}
+
+#comment-view {
+    width: 300px;
+
+    border-radius: 14px;
+    filter: drop-shadow(-4px 4px 0px rgb(114, 158, 184));
+    transform: perspective(50px) translateX(40px) rotateZ(-6deg) rotateY(2deg);
+    height: 360px;
+
+
 }
