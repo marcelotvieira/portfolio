@@ -194,8 +194,7 @@ a{
 }
 .home-content {
     display: flex;
- 
-
+    margin-top: 20px;
 }
 .personal-info {
     max-width: 300px;
@@ -272,4 +271,88 @@ textarea {
     color: white;
     font-weight: 700;
     border-radius: 8px;
+    transition: .3s;
+}
+.contact-form button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+    transition: .6s;
+}
+
+.portfolio-content {
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+    min-width: 100%;
+    color: rgb(84, 92, 109);
+    font-weight: 500;
+
+}
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+    height: 70%;
+    scroll-behavior: smooth;
+    padding-bottom: 40px;
+}
+.slider::-webkit-scrollbar {
+    display: none;
+    }
+.component-info {
+    max-width: 320px;
+    margin-left: 80px;
+    
+}
+.portfolio-navigation {
+
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    height: 10%;
+    border-radius: 40px;
+}
+.portfolio-navigation img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+
+
+}
+.title h1 {
+    color: rgb(104, 140, 238);
+    font-size: 44px;
+
+}
+
+.portfolio-content img {
+    width: 180px;
+    border: 6px solid rgb(47, 70, 88);
+    border-bottom: 10px solid rgb(47, 70, 88);
+    border-top: 10px solid rgb(47, 70, 88);
+    border-radius: 30px;
+    filter: drop-shadow(-8px 8px 0px rgb(114, 158, 184));
+    transform: perspective(50px) translateX(40px) rotateZ(-6deg) rotateY(2deg);
+    box-shadow: -30px 40px 16px rgba(0, 0, 0, 0.2);
+    animation: graphics-animation 3s infinite alternate;
+    transition: .5s;
+
+}
+
+
+@keyframes graphics-animation {
+    0% {
+
+        transform: perspective(50px) translateX(40px) rotateZ(-6deg) rotateY(2deg);
+    }
+
+    100% {
+        transform: perspective(42px) translateX(46px) rotateZ(-5deg) rotateY(2deg);
+    }
 }

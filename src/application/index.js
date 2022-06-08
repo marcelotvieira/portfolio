@@ -22,3 +22,4 @@ function referencia(id){
     let page = document.getElementById(id);
     page.classList.toggle('active');
 }
+
