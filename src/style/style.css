@@ -32,7 +32,7 @@ body {
 
 .page {
   width: 88%;
-
+  scrollbar-width: none;
   padding-top: 0px;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -364,6 +364,7 @@ textarea {
   height: 70%;
   scroll-behavior: smooth;
   padding-bottom: 40px;
+  scrollbar-width: none;
 }
 
 .slider::-webkit-scrollbar {
@@ -666,7 +667,7 @@ textarea {
     transform: translateX(0px) rotateZ(0deg);
     opacity: 1;
     margin-left: 0px;
-    width: min-content;
+    width: 84%;
   }
   .home-content {
     display: flex;
