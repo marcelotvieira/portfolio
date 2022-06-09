@@ -100,6 +100,7 @@ header img {
   font-size: 13px;
   font-weight: 700;
   filter: drop-shadow(0px 3px 8px rgba(27, 85, 161, 0.4));
+  text-align: right;
 }
 
 .home.active p,
@@ -197,7 +198,7 @@ a {
       rgba(239, 249, 255, 0.85),
       rgba(239, 249, 255, 0.85)
     ),
-    url(/src/images/web-development\ \(1\).png);
+    url(/src/images/bg-portfolio1.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -408,16 +409,19 @@ textarea {
 }
 
 .portfolio-navigation img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   overflow: hidden;
   border-radius: 50%;
-  border: 2px solid white;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  border: 4px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  margin-top: -24px;
+
 }
 
 .title h1 {
   color: rgb(104, 140, 238);
+
   font-size: 44px;
 }
 
@@ -493,6 +497,9 @@ textarea {
     justify-content: center;
     gap: 1.5rem
 }
+.hobbie-section {
+
+}
 
 .sobre-page {
     height: 90%;
@@ -502,14 +509,14 @@ textarea {
 }
 .sobre-page p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(84, 92, 109);
     margin: 40px 0;
 }
 
 .hobbie {
-    width: 180px;
-    height: 160px;
+    width: 140px;
+    height: 120px;
     border-radius: 50px;
     border: 6px solid rgba(104, 140, 238, 0.7);
     filter: drop-shadow(-14px 14px 4px rgba(0, 0, 0, 0.2));

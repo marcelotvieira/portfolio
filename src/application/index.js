@@ -9,7 +9,7 @@ function toggleOption(id) {
     console.log(id)
 }
 
-function referencia(id){
+function referenciaAdd(id){
     let referencia = '';
     for(let i = 0; id[i] !='-'; i++){
 
@@ -18,8 +18,23 @@ function referencia(id){
     }
     console.log(referencia)
     let option = document.getElementById(referencia);
-    option.classList.toggle("active");
+    option.classList.add("active");
     let page = document.getElementById(id);
-    page.classList.toggle('active');
+    page.classList.add('active');
 }
+
+function referenciaRemove(id){
+    let referencia = '';
+    for(let i = 0; id[i] !='-'; i++){
+
+        id[i]!='-'?referencia += id[i]:null;  
+
+    }
+    console.log(referencia)
+    let option = document.getElementById(referencia);
+    option.classList.remove("active");
+    let page = document.getElementById(id);
+    page.classList.remove('active');
+}
+
 
