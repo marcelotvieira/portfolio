@@ -223,7 +223,9 @@ a {
     url(/src/images/bg-sobre.png);
   background-repeat: no-repeat;
   background-position: right;
+  
 }
+
 
 #home-page {
   color: rgb(84, 92, 109);
@@ -495,7 +497,9 @@ textarea {
 .hobbies {
     display: flex;
     justify-content: center;
-    gap: 1.5rem
+    gap: 1.5rem;
+    transform: translateX(0px) perspective(40px) rotateY(2deg) rotateX(3deg);
+    margin-left: 30px;
 }
 .hobbie-section {
 
@@ -515,15 +519,32 @@ textarea {
 }
 
 .hobbie {
-    width: 140px;
-    height: 120px;
-    border-radius: 50px;
-    border: 6px solid rgba(104, 140, 238, 0.7);
+    width: 150px;
+    height: 150px;
+    border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
     filter: drop-shadow(-14px 14px 4px rgba(0, 0, 0, 0.2));
-    transform: perspective(40px) rotateZ(2deg) rotateX(2deg) rotateY(-4deg);
+    transform: perspective(30px) rotateZ(2deg) rotateX(2deg) rotateY(-3deg);
     margin: 0 0;
     margin-right: -58px;
     
+}
+.sobre-content {
+  max-width: 1000px;
+
+}
+.hobbie-section {
+  display: flex;
+  justify-content: space-around;
+  
+
+}
+.hobbie-section p {
+  max-width: 300px;
+}
+@media (max-width: 1100px) {
+ 
+
 }
 
 
@@ -552,6 +573,12 @@ textarea {
   }
   .menu {
     display: none;
+  }
+  .page {
+    width: 88%;
+  
+    padding-top: 0px;
+
   }
   .tecnologias {
     display: block;
@@ -589,6 +616,10 @@ textarea {
     animation: graphics-animation 3s infinite alternate;
     transition: 0.5s;
   }
+  .personal-info {
+    visibility: visible;
+    opacity: 1;
+  }
   .title h1 {
     font-size: 30px;
     margin: 20px 0;
@@ -624,12 +655,12 @@ textarea {
     height: 280px;
   }
   .hobbies img {
-    width: 60px;
-    height: 60px;
+    width: 66px;
+    height: 66px;
     margin-right: -38px;
     margin: 40px 0;
-    border: 3px solid white;
-    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
   }
   .contact-form {
     transform: translateX(0px) rotateZ(0deg);
@@ -642,6 +673,9 @@ textarea {
     flex-direction: column;
     flex-direction: column-reverse;
     margin-top: 20px;
+  }
+  .hobbie-section {
+    display: block;
   }
   
 
